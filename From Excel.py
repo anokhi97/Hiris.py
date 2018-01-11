@@ -148,4 +148,4 @@ rs683_e = '0.18114'
 
 #probability of light shade = 1 - c
 
-#if 'number of alleles' > 0 ...
+#if 'number of alleles' > 0 
