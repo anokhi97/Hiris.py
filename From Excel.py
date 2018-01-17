@@ -97,3 +97,4 @@ c = exp(-2.528) + results_f
 'probability of dark shade' = c
 
 'probability of light shade' = 1 - c
+
