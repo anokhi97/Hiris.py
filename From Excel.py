@@ -1,9 +1,13 @@
 import pandas as pd
 import numpy as np
 import math
-
+import jason
+import sys
+input = sys.argv[1]
+parsed_json = json.load(open(input))
 
 #Hair colour
+from wheel.signatures.djbec import l
 
 variant_a = {'rs86insA_a' : 1.2522, 'rs11547464_a' : -0.61155, 'rs885479_a' : 0.2937, 'rs1805008_a' : -0.50143, 'rs1805005_a' : 0.21172, 'rs1805006_a' : 1.93E+00, 'rs1805007_a' : -0.32318, 'rs1805009_a' : 0.60861, 'rsC456A_a' : 0.25624, 'rs2228479_a' : -0.054143, 'rs1110400_a' : -0.56315, 'rs28777_a' : 0.52168, 'rs16891982_a' : 0.75284, 'rs12821256_a' : -0.34957, 'rs4959270_a' : -0.19171, 'rs12203592_a' : 1.6475, 'rs1042602_a' : 0.16092, 'rs1800407_a' : -0.19111, 'rs2402130_a' : 0.35821, 'rs12913832_a' : 1.214, 'rs2378249_a' : 0.12669, 'rs683_a' : 0.21172}
 
@@ -22,8 +26,6 @@ for key, value in variant_a.iteritems():
 np.hstack(results_a)
 print(results_a)
 
-#^works
-
 results_b = []
 for key, value in variant_b.iteritems():
     if 'number of alleles'>= 0:
@@ -38,17 +40,17 @@ for key, value in variant_c.iteritems():
     results_c.append(value * 'number of alleles')
 np.hstack(results_c)
 
-'x' = exp(-2.0769) + results_a
-'y' = exp(-6.3953) + results_b
-'z' = exp(-2.4029) + results_c
+x = exp(-2.0769) + results_a
+y = exp(-6.3953) + results_b
+z = exp(-2.4029) + results_c
 
-'probability of Brown hair' = x/(1+(x+y+z))
+probability of Brown hair = x/(1+(x+y+z))
 
-'probability of Black hair' = y+(1+(x+y+z))
+probability of Black hair = y+(1+(x+y+z))
 
-'probability of Blonde hair' = z/(1+(x+y+z))
+probability of Blonde hair = z/(1+(x+y+z))
 
-'probability of Red hair' = (x+y+z)
+probability of Red hair = (x+y+z)
 
 #^^ maybe use a for loop for these?
 #cant assign to literal?
@@ -75,12 +77,11 @@ np.hstack(results_e)
 a = exp(3.84) + results_d
 b = exp(0.37) + results_e
 
-'probability of blue eyes' = a/(1+(a+b)) = 'l'
-#
+probability of blue eyes = a/(1+(a+b)) = l
 
-'probability of green eyes' = b/(1+(a+b)) = 'g'
+probability of green eyes = b/(1+(a+b)) = g
 
-'probability of brown eyes' = 1 - l - g
+probability of brown eyes = 1 - l - g
 
 #Hair shade
 variant_f = {'rs11547464_f' : -16.575, 'rs885479_f' : 0.18709, 'rs1805008_f' : -0.9331, 'rs1805005_f' : -0.030452, 'rs1805006_f' : -15.305, 'rs1805007_f' : -1.7901, 'rs1805009_f' : -0.078426, 'rs2228479_f' : 0.0049399, 'rs1110400_f' : -0.15892, 'rs28777_f' : 1.4594, 'rs16891982_f' : 0.78071, 'rs12821256_f' : -0.7757, 'rs4959270_f' : -0.44286, 'rs12203592_f' : 1.8636, 'rs1042602_f' : 0.18179, 'rs1800407_f' : -0.59583, 'rs2402130_f' : 0.33304, 'rs12913832_f' : 1.9622, 'rs2378249_f' : 0.090083, 'rs683_f' : 0.18114}
@@ -94,7 +95,7 @@ np.hstack(results_f)
 
 c = exp(-2.528) + results_f
 
-'probability of dark shade' = c
+probability of dark shade = c
 
-'probability of light shade' = 1 - c
+probability of light shade = 1 - c
 
