@@ -1,0 +1,98 @@
+{
+    "rs86insA": {
+        "minor": "A"
+        "number": 0
+    },
+    "rs11547464": {
+        "minor": "A"
+        "number": 0
+    }
+    "rs885479": {
+        "minor": "T"
+        "number": 0
+    },
+    "rs1805008": {
+        "minor": "T"
+        "number": 0
+    },
+    "rs1805005": {
+        "minor": "T"
+        "number": 0
+    },
+    "rs1805006": {
+        "minor": "A"
+        "numner": 0
+    },
+    "rs1805007": {
+        "minor": "T"
+        "number": 0
+    },
+    "rs1805009": {
+        "minor": "C"
+        "number": 0
+    },
+    "Y152OCH": {
+        "minor": "A"
+        "number": 0
+    },
+    "rs2228479": {
+        "minor": "A"
+        "number": 0
+    },
+    "rs1110400": {
+        "minor": "C"
+        "number": 0
+    },
+    "rs28777": {
+        "minor": "C"
+        "number": 0
+    },
+    "rs16891982": {
+        "minor": "C"
+        "number": 0
+    },
+    "rs12821256": {
+        "minor": "G"
+        "number": 0
+    },
+    "rs4959270": {
+        "minor": "A"
+        "number": 0
+    },
+    "rs12203592": {
+        "minor": "T"
+        "number": 0
+    },
+    "rs1042602": {
+        "minor": "T"
+        "number": 0
+    },
+    "rs1800407": {
+        "minor": "A"
+        "number": 0
+    },
+    "rs2402130": {
+        "minor": "G"
+        "number": 0
+    },
+    "rs12913832": {
+        "minor": "T"
+        "number": 0
+    },
+    "rs2378249": {
+        "minor": "C"
+        "number": 0
+    },
+    "rs12896399": {
+        "minor": "G"
+        "number": 0
+    },
+    "rs1393350": {
+        "minor": "T"
+        "number": 0
+    },
+    "rs683": {
+        "minor": "G"
+        "number": 0
+    },
+}
