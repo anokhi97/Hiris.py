@@ -15,29 +15,26 @@ variant_b = {'rs86insA_b' : 25.508, 'rs11547464_b' : 2.5381, 'rs885479_b' : -0.2
 
 variant_c = {'rs86insA_c' : 2.732, 'rs11547464_c' : -16.969, 'rs885479_c' : 0.39983, 'rs1805008_c' : -0.86062, 'rs1805005_c' : -0.0029013, 'rs1805006_c' : -1.61E+01, 'rs1805007_c' : -1.3757, 'rs1805009_c' : 0.060631, 'rsC456A_c' : 3.9824, 'rs2228479_c' : 0.17012, 'rs1110400_c' : 0.29143, 'rs28777_c' : 0.82228, 'rs16891982_c' : 1.1617, 'rs12821256_c' : -0.89824, 'rs4959270_c' : -0.36359, 'rs12203592_c' : 1.997, 'rs1042602_c' : 0.065432, 'rs1800407_c' : -0.49601, 'rs2402130_c' : 0.26536, 'rs12913832_c' : 1.9391, 'rs2378249_c' : -0.089509, 'rs683_c' : 0.15796}
 
-#Raw_input() for number of alleles?
-#the number of alleles should be different for a, b and c variants?
-
 results_a = []
 for key, value in variant_a.iteritems():
-    if 'number of alleles' >= 0:
-        print (value *  'number of alleles')
-    results_a.append(value * "number of alleles")
+    if 'input' >= 0:
+        print (value *  'input')
+    results_a.append(value * 'input')
 np.hstack(results_a)
 print(results_a)
 
 results_b = []
 for key, value in variant_b.iteritems():
-    if 'number of alleles'>= 0:
-        print (value *  'number of alleles')
-    results_b.append(value * 'number of alleles')
+    if 'input'>= 0:
+        print (value *  'input')
+    results_b.append(value * 'input')
 np.hstack(results_b)
 
 results_c = []
 for key, value in variant_c.iteritems():
-    if 'number of alleles' >= 0:
-        print (value *  'number of alleles')
-    results_c.append(value * 'number of alleles')
+    if 'input' >= 0:
+        print (value *  'input')
+    results_c.append(value * 'input')
 np.hstack(results_c)
 
 x = exp(-2.0769) + results_a
@@ -59,16 +56,16 @@ variant_e = { 'rs12913832_e' : -1.99, 'rs1800407_e' : 1.05, 'rs1289699_e' : -0.0
 
 results_d = []
 for key, value in variant_d.iteritems():
-    if 'number of alleles' >= 0:
-        print(value * 'number of alleles')
-    results_d.append(value * 'number of alleles')
+    if 'input' >= 0:
+        print(value * 'input')
+    results_d.append(value * 'input')
 np.hstack(results_d)
 
 results_e = []
 for key, value in variant_d.iteritems():
-    if 'number of alleles' >= 0:
-        print(value * 'number of alleles')
-    results_e.append(value * 'number of alleles')
+    if 'input' >= 0:
+        print(value * 'input')
+    results_e.append(value * 'input')
 np.hstack(results_e)
 
 a = exp(3.84) + results_d
@@ -85,9 +82,9 @@ variant_f = {'rs11547464_f' : -16.575, 'rs885479_f' : 0.18709, 'rs1805008_f' : -
 
 results_f = []
 for key, value in variant_d.iteritems():
-    if 'number of alleles' >= 0:
-        print(value * 'number of alleles')
-    results_f.append(value * 'number of alleles')
+    if 'input' >= 0:
+        print(value * 'input')
+    results_f.append(value * 'input')
 np.hstack(results_f)
 
 c = exp(-2.528) + results_f
