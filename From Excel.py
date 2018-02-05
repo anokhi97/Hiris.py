@@ -52,9 +52,6 @@ probability of Blonde hair = z/(1+(x+y+z))
 
 probability of Red hair = (x+y+z)
 
-#^^ maybe use a for loop for these?
-#cant assign to literal?
-
 #Eye colour
 variant_d = {'rs12913832_d' : -4.87, 'rs1800407_d' : 1.15, 'rs12896399_d' : -0.53, 'rs16891982_d' : -1.53, 'rs1393350_d' : 0.44, 'rs12203592_d' : 0.60}
 
