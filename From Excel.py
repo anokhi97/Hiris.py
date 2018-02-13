@@ -25,7 +25,7 @@ print(results_a)
 
 results_b = []
 for key, value in variant_b.iteritems():
-    if 'input'>= 0:
+    if 'input`'>= 0:
         print (value *  'input')
     results_b.append(value * 'input')
 np.hstack(results_b)
@@ -41,13 +41,13 @@ x = exp(-2.0769) + results_a
 y = exp(-6.3953) + results_b
 z = exp(-2.4029) + results_c
 
-probability of Brown hair = x/(1+(x+y+z))
+probability_of_Brown_hair = x/(1+(x+y+z))
 
-probability of Black hair = y+(1+(x+y+z))
+probability_of_Black_hair = y+(1+(x+y+z))
 
-probability of Blonde hair = z/(1+(x+y+z))
+probability_of_Blonde_hair = z/(1+(x+y+z))
 
-probability of Red hair = (x+y+z)
+probability_of_Red_hair = (x+y+z)
 
 #Eye colour
 variant_d = {'rs12913832_d' : -4.87, 'rs1800407_d' : 1.15, 'rs12896399_d' : -0.53, 'rs16891982_d' : -1.53, 'rs1393350_d' : 0.44, 'rs12203592_d' : 0.60}
@@ -71,11 +71,11 @@ np.hstack(results_e)
 a = exp(3.84) + results_d
 b = exp(0.37) + results_e
 
-probability of blue eyes = a/(1+(a+b)) = l
+probability_of_blue_eyes = a/(1+(a+b)) = l
 
-probability of green eyes = b/(1+(a+b)) = g
+probability_of_green_eyes = b/(1+(a+b)) = g
 
-probability of brown eyes = 1 - l - g
+probability_of_brown_eyes = 1 - l - g
 
 #Hair shade
 variant_f = {'rs11547464_f' : -16.575, 'rs885479_f' : 0.18709, 'rs1805008_f' : -0.9331, 'rs1805005_f' : -0.030452, 'rs1805006_f' : -15.305, 'rs1805007_f' : -1.7901, 'rs1805009_f' : -0.078426, 'rs2228479_f' : 0.0049399, 'rs1110400_f' : -0.15892, 'rs28777_f' : 1.4594, 'rs16891982_f' : 0.78071, 'rs12821256_f' : -0.7757, 'rs4959270_f' : -0.44286, 'rs12203592_f' : 1.8636, 'rs1042602_f' : 0.18179, 'rs1800407_f' : -0.59583, 'rs2402130_f' : 0.33304, 'rs12913832_f' : 1.9622, 'rs2378249_f' : 0.090083, 'rs683_f' : 0.18114}
@@ -89,7 +89,7 @@ np.hstack(results_f)
 
 c = exp(-2.528) + results_f
 
-probability of dark shade = c
+probability_of_dark_shade = c
 
-probability of light shade = 1 - c
+probability_of_light_shade = 1 - c
 
